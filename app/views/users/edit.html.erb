@@ -1,0 +1,11 @@
+<h3>Railsy-er Forms with #form_for</h3>
+
+<%=form_for(@user) do |f|%>
+	<%=f.label 'username'%>
+	<%=f.text_field :username, placeholder: 'Your user name here'%>
+	<%=f.label :email%>
+	<%=f.text_field :email%>
+	<%=f.label :password%>
+	<%=f.password_field :password%>
+	<%=f.submit%>
+<%end%>
